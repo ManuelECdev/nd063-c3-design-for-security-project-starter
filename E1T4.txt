@@ -1,6 +1,0 @@
-1.
-The web instance is reachable via the internet.
-Only the LB VIP should be reachable from the internet.
-2.
-Free recipes s3 bucket is reachable via the internet.
-The s3 bucket should be a vpc endpoint and the web app instance should reach it via AWS internal network.
