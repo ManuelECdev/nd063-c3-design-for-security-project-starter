@@ -1,0 +1,9 @@
+
+1. What findings were detected related to the brute force attack?
+
+10.192.11.79 is performing SSH brute force attacks against i-0f4be21f594f3db2e. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.
+
+
+3. Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information?
+
+Amazon GuardDuty is a continuous security monitoring service that analyzes and processes the following Data sources: VPC Flow Logs, AWS CloudTrail management event logs, Cloudtrail S3 data event logs, and DNS logs.

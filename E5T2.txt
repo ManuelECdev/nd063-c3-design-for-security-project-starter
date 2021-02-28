@@ -1,0 +1,54 @@
+1.Identify tools that will allow you to do the following: a. Scan infrastructure as code templates. b. Scan AMI\'92s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities.
+
+
+Scan OS or container for vulnerabilities:
+
+Clair
+Anchore
+Dagda
+Falco
+Aqua Security
+Docker Bench
+Harbor
+JFrog Xray
+Qualys
+Docker Scan
+
+
+Scan Infrastructure as code for vulnerabilities:
+
+ 
+Cfripper 
+Cloudsploit 
+cfn-lint  
+Chef inspec 
+Regula 
+Terrascan
+
+Post-deployment compliance scanning tools:
+
+AWS Inspector 
+AWS Config
+AWS security hub
+
+  
+
+2. For each tool - identify an example compliance violation or vulnerability which it might expose.
+
+Scan Infrastructure as code for vulnerabilities  tools:
+
+Vulnerabilities such as iam policies with too many permissions.
+
+
+Containers and OS tools :
+
+Vulnerabilities due to software bugs.
+
+
+Post-deployment compliance scanning tools:
+
+Allowing SSH password login
+Security groups with incoming rules of 0.0.0.0/0 port 22.
+Operating System Vulnerabilities
+S3 Buckets without encryption in rest.
+Cloud resources without logging enabled. 

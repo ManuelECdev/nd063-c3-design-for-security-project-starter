@@ -1,0 +1,11 @@
+1.
+The web instance is reachable via the internet. Having the web instance with a public IP address and ssh port open with password authentication is a vulnerability because it can be attacked with a ssh brute force attack. 
+
+The web application should be accessed via the Application Load Balancer only and the web instance should be connected to private networks instead of public networks. The web instance can be managed via AWS Systems Manager instead of ssh.
+
+2.
+IAM role policies gives too many permissions.
+
+The web instance doesn't need access to the Secret Recipe vault.
+The IAM role should allow only access read access to the Free Recipes for the web instance. In this way if the web instance is compromised the attacker would have only read access to the Free Recipes.
+
